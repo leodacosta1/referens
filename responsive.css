@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: 100px 100px 1fr 100px;
+
+        grid-template-areas: 
+        "header header header"
+        "aside aside aside"
+        "main main main"
+        "footer footer footer";
+    }
+}

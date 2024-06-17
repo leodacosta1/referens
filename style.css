@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "IM Fell Great Primer", serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+.logo {
+    height: 40px;
+    padding: 15px 0 15px 15px;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* GRID */
+
+.grid {
+    font-family: "IM Fell Great Primer", serif;
+    font-size: 21px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.grid header {
+    grid-area: header;
+    background-color: rgb(0, 31, 52);
+}
+
+.grid aside {
+    grid-area: aside;
+    background-color: rgb(0, 125, 135);
+}
+
+.grid aside ul {
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+.grid aside ul li {
+    list-style-type: none;
+}
+
+ul li:hover {
+    color: white;
+    background: linear-gradient(to right, red, orange);
+}
+
+.botaoaddimg {
+    padding-left: 5px;
+}
+
+.grid main {
+    grid-area: main;
+}
+
+.grid footer {
+    grid-area: footer;
+    background-color: rgb(0, 31, 52);
+}
+
+
+/* GRID2 */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 10px;
+    height: calc(100% - 20px);
+    margin: 10px;
+}
+
+.grid2 .column {
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.grid2 .column img {
+    max-width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    vertical-align: top;
+}
+
